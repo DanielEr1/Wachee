@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Student Attendance</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    /* Clean white and blue design */
+    body {
+      min-height: 100vh;
+      background: linear-gradient(135deg, #e0f2fe 0%, #bae6fd 50%, #e0f2fe 100%);
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      padding: 40px 20px;
+    }
+
+    .container {
+      max-width: 900px;
+      margin: 0 auto;
+    }
+
+    h1 {
+      text-align: center;
+      color: #1e40af;
+      font-size: 2.2rem;
+      margin-bottom: 8px;
+      font-weight: 700;
+    }
+
+    .subtitle {
+      text-align: center;
+      color: #3b82f6;
+      margin-bottom: 30px;
+      font-size: 1rem;
+    }
+
+    .table-wrapper {
+      background: #ffffff;
+      border-radius: 16px;
+      padding: 20px;
+      box-shadow: 0 4px 20px rgba(59, 130, 246, 0.15);
+      overflow-x: auto;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+    }
+
+    thead tr {
+      background: linear-gradient(90deg, #1e40af, #3b82f6);
+    }
+
+    th {
+      padding: 14px 16px;
+      text-align: left;
+      color: #fff;
+      font-weight: 600;
+      text-transform: uppercase;
+      font-size: 0.85rem;
+      letter-spacing: 0.5px;
+    }
+
+    th:first-child { border-radius: 8px 0 0 8px; }
+    th:last-child { border-radius: 0 8px 8px 0; }
+
+    tbody tr {
+      border-bottom: 1px solid #e5e7eb;
+      transition: background-color 0.2s ease;
+    }
+
+    tbody tr:hover {
+      background-color: #f0f9ff;
+    }
+
+    tbody tr:last-child {
+      border-bottom: none;
+    }
+
+    td {
+      padding: 12px 16px;
+      color: #1f2937;
+      font-size: 0.95rem;
+    }
+
+    .roll-no {
+      font-weight: 600;
+      color: #1e40af;
+    }
+
+    .status {
+      padding: 5px 14px;
+      border-radius: 20px;
+      font-size: 0.8rem;
+      font-weight: 600;
+      text-transform: uppercase;
+      display: inline-block;
+      min-width: 80px;
+      text-align: center;
+    }
+
+    .present {
+      background: #dcfce7;
+      color: #166534;
+    }
+
+    .absent {
+      background: #fee2e2;
+      color: #991b1b;
+    }
+
+    .late {
+      background: #fef3c7;
+      color: #92400e;
+    }
+
+    .stats {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      margin-top: 25px;
+      flex-wrap: wrap;
+    }
+
+    .stat-card {
+      background: #ffffff;
+      padding: 16px 30px;
+      border-radius: 12px;
+      text-align: center;
+      min-width: 120px;
+      box-shadow: 0 2px 10px rgba(59, 130, 246, 0.1);
+    }
+
+    .stat-number {
+      font-size: 2rem;
+      font-weight: 700;
+      margin-bottom: 4px;
+    }
+
+    .stat-card.present-stat .stat-number { color: #166534; }
+    .stat-card.absent-stat .stat-number { color: #991b1b; }
+    .stat-card.late-stat .stat-number { color: #92400e; }
+
+    .stat-label {
+      color: #6b7280;
+      font-size: 0.85rem;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+    }
+
+    .header-section {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    .date-badge {
+      background: #1e40af;
+      color: #fff;
+      padding: 6px 16px;
+      border-radius: 20px;
+      display: inline-block;
+      margin-bottom: 20px;
+      font-weight: 500;
+      font-size: 0.9rem;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="header-section">
+      <h1>Student Attendance</h1>
+      <p class="subtitle">Class 12-G | Web Student</p>
+    </div>
+
+    <div class="table-wrapper">
+      <!-- Simplified table with only Roll No, Name, Status -->
+      <table>
+        <thead>
+          <tr>
+            <th>Roll No</th>
+            <th>Student Name</th>
+            <th>Status</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr><td class="roll-no">18</td><td>Daniel Erdataw</td><td><span class="status present">Present</span></td></tr>
+          <tr><td class="roll-no">46</td><td>Samuel Abebe</td><td><span class="status present">Present</span></td></tr>
+        </tbody>
+      </table>
+    </div>
+
+
+    </div>
+  </div>
+</body>
+</html>

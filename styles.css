@@ -1,0 +1,285 @@
+/* --- Reset & Base Styles --- */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.6;
+    color: #2513c5;
+}
+
+h1, h2, h3 {
+    font-family: 'Playfair Display', serif;
+    margin-bottom: 15px;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+ul {
+    list-style: none;
+}
+
+.container {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.section-padding {
+    padding: 60px 0;
+}
+
+.section-title {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+    color: #1174d6;
+}
+
+.section-gray {
+    background-color: #f4f4f4;
+}
+
+/* --- Navigation --- */
+header {
+    background: #ffffff;
+    box-shadow: 0 2px 5px rgba(15, 187, 255, 0.89);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 80px;
+}
+
+.logo h1 {
+    font-size: 1.5rem;
+    color: #0056b3; /* School primary color */
+}
+
+nav ul {
+    display: flex;
+    gap: 20px;
+}
+
+nav a {
+    font-weight: 500;
+    transition: color 0.3s;
+}
+
+nav a:hover {
+    color: #0056b3;
+}
+
+.btn-highlight {
+    background-color: #0056b3;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+}
+
+.btn-highlight:hover {
+    background-color: #004494;
+    color: white;
+}
+
+/* --- Hero Section --- */
+.hero {
+    /* Placeholder image - replace the URL with a real school photo */
+    background: url('https://images.unsplash.com/photo-1523050854058-8df90110c9f1?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80') no-repeat center center/cover;
+    height: 85vh;
+    position: relative;
+}
+
+.hero-overlay {
+    background: rgba(49, 68, 240, 0.699); /* Dark overlay to make text readable */
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.hero-content {
+    color: white;
+    max-width: 700px;
+    padding: 20px;
+}
+
+.hero-content h2 {
+    font-size: 3.5rem;
+    margin-bottom: 20px;
+}
+
+.hero-content p {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+}
+
+.btn-primary, .btn-secondary {
+    display: inline-block;
+    padding: 12px 30px;
+    border-radius: 5px;
+    margin: 5px;
+    font-weight: bold;
+    transition: all 0.3s ease;
+}
+
+.btn-primary {
+    background-color: #0056b3;
+    color: white;
+}
+
+.btn-primary:hover {
+    background-color: #004494;
+}
+
+.btn-secondary {
+    background-color: transparent;
+    border: 2px solid white;
+    color: white;
+}
+
+.btn-secondary:hover {
+    background-color: white;
+    color: #4d2525;
+}
+
+/* --- About Section --- */
+.about-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+    align-items: center;
+}
+
+.stat-box {
+    background: #0056b3;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+/* Gallery Section */
+.gallery {
+  padding: 60px 20px;
+  background: white;
+}
+
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+.gallery-item {
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  background: white;
+}
+
+.gallery-item img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+}
+
+.gallery-item p {
+  padding: 15px;
+  text-align: center;
+  font-weight: 500;
+  color: #1a5276;
+}
+/* --- Cards (Programs) --- */
+.card-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+.card {
+    background: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.card h3 {
+    color: #0056b3;
+}
+
+/* --- Footer --- */
+footer {
+    background-color: #2c3e50;
+    color: white;
+    padding-top: 50px;
+}
+
+.footer-content {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 30px;
+    padding-bottom: 40px;
+    border-bottom: 1px solid #445566;
+}
+
+.footer-section h4 {
+    margin-bottom: 20px;
+}
+
+.footer-section ul li {
+    margin-bottom: 10px;
+}
+
+.footer-section a:hover {
+    color: #3498db;
+    text-decoration: underline;
+}
+
+.footer-bottom {
+    text-align: center;
+    padding: 20px;
+    font-size: 0.9rem;
+}
+
+/* --- Mobile Responsiveness --- */
+@media (max-width: 768px) {
+    .nav-container {
+        flex-direction: column;
+        height: auto;
+        padding: 20px;
+    }
+
+    nav ul {
+        margin-top: 20px;
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .hero-content h2 {
+        font-size: 2.5rem;
+    }
+
+    .about-grid {
+        grid-template-columns: 1fr;
+    }
+}
